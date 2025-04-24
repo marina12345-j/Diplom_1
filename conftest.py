@@ -1,7 +1,6 @@
 from unittest.mock import Mock
 import pytest
 from data import Burger1, Burger2
-from praktikum.database import Database
 
 
 @pytest.fixture
@@ -56,7 +55,5 @@ def mock_souse_second():
     mock_souse_2.get_type.return_value = Burger2.sauce_type
     return mock_souse_2
 
-@pytest.fixture
-def db():
-    return Database()
+
 
